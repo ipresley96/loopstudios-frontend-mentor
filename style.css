@@ -25,7 +25,7 @@ body{
 /* ===== HERO STYLING ===== */
 .hero{
     height: 600px;
-    background-image: url("image-hero.jpg");
+    background-image: url("/image-hero.jpg");
     background-repeat: no-repeat;
     background-position: inherit;
 }

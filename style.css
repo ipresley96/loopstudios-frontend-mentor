@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+ 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    margin: 0;
+}
+/* ===== HERO STYLING ===== */
+.hero{
+    height: 600px;
+    background-image: url("/images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+
+#nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company{
+    margin-left: 10%;
+}
+
+.company-name{
+    font-family: 'Alata';
+    font-size: 30px;
+    color: var(--White);
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    margin-left: 500px;
+}
+
+.menu .menu-items{
+    padding-right: 50px;
+    align-self: center;
+}
+
+.menu .menu-items a{
+    text-decoration: none;
+    color: var(--White);
+    font-family: 'Alata';
+}
+
+.motto{
+    width: 500px;
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--White);
+    border: 1px solid var(--White);
+    margin-top: 10%;
+    margin-left: 10%;
+    padding: 30px;
+}
+
+/* ===== INTERACTIVE IMAGE ===== */
+
+.interactive{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    margin: 125px auto;
+    
+}
+
+.interactive-text{
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--White);
+    width: 500px;
+    padding: 10px 0 0 100px;
+    right: -20px;
+}
+
+
+.interactive-leader{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.company-history{
+    width: 410px;
+}
+
+/* ===== PICTURE GRID ===== */
+.picture-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.picture-container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creations{
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.full-gallery{
+    padding: 10px 40px;
+    color: var(--Black);
+    border: 1px solid black;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.full-gallery:hover{
+    color: var(--White);
+    background-color: var(--Dark-Gray);
+    opacity: .5;
+}
+
+
+.picture-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr 1fr .25fr;
+    gap: 30px;
+}
+
+.grid-item{
+    position: relative;
+    width: 100%;
+    background-color: var(--Black);
+}
+
+.top{
+    grid-column: 1 / 4;
+}
+
+.mobile-bottom{
+    grid-row: 1;
+    grid-column: 4 / 5;
+    align-self: center;
+    text-align: end;
+}
+
+.grid-photo{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    opacity: .7;
+    filter: contrast(150%);
+}
+
+.photo-name{
+    position: absolute;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    width: 200px;
+    font-weight: 300;
+    bottom: 0;
+    left: 25px;
+    z-index: 100;
+    color: var(--White);
+}
+
+/* ===== FOOTER LINK ===== */
+footer{
+    color: var(--White);
+    background-color: var(--Black);
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.footer{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.loop-footer{
+    font-size: 20px;
+    font-family: 'Alata', sans-serif;
+    margin: 0;
+}
+
+.social-icons, 
+.trademark{
+    margin: 0;
+}
+
+.footer-top,
+.footer-bottom, 
+.footer-links{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-top,
+.footer-bottom{
+    flex-direction: column;
+}
+
+.footer-menu,
+.trademark{
+    margin-top:10px;
+}
+
+.trademark{
+    color: var(--Dark-Gray);
+}
+
+.footer-bottom{
+    align-items: flex-end
+}
+
+.icons{
+    margin: 0 5px;
+}
+
+.footer-bottom{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-links{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-link-items{
+    margin-right: 10px;
+}
+
+/* ===== MOBILE HAMBURGER MENU ===== */
+
+.hamburger-menu{
+    width: 40px;
+    display: none;
+}
+
+.ham-menu{
+    border: 1px solid #000;
+}
+
+.top-line,
+.middle-line,
+.bottom-line{
+    border-color: var(--White);
+}
+
+.top-line{
+    transform: translateY(-7px);
+
+}
+
+.bottom-line{
+    transform: translateY(7px);
+}
+
+/* ====== HAMBURGER-MENU ON-CLICK ====== */
+
+.change .top-line{
+    transform: translateY(7px) rotate(45deg);
+    border-color: var(--White);
+    position: relative;
+    z-index: 2;
+}
+
+.change .middle-line{
+    visibility: hidden;
+}
+
+.change .bottom-line{
+    transform: translateY(2px) rotate(-45deg);
+    border-color: var(--White);
+    position: relative;
+    z-index: 2;
+}
+
+.change.nav-menu.menu{
+    list-style-type: none;
+    color: var(--White);
+}
+
+.menubg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--Black);
+    width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1100px) {
+    .menu{
+        margin-left: 100px;
+    }
+
+    .image-interactive{
+        width: 500px;
+    }
+
+    .interactive-text {
+        width: 464px;
+        padding: 15px 0 0 26px;  
+    }
+    
+    .grid-photo {
+        width: 100%;
+    }
+
+    .creations{
+        font-size: auto;
+    }
+
+    .full-gallery{
+        font-size: 20px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .photo-name{
+        font-size: 22px;
+        width: 70%;
+        left: 18px;
+        z-index: 100;
+        color: var(--White);
+    }
+}
+
+
+@media only screen and (min-width: 200px) and (max-width:767px) {
+
+    .hero{
+        height: 400px;
+    }
+
+    #nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .motto {
+        width: 71%;
+        font-size: 32px;
+        color: var(--White);
+        border: 1px solid var(--White);
+        margin-left: 10%;
+        padding: 20px;
+    }
+    
+    .menu{
+        display: block;
+        color: var(--Black);
+        position: absolute;
+        z-index: 100;
+        margin: 0;
+        top: 200px;
+    }
+
+    .menu .menu-items a {
+       display: none;
+       
+    }
+
+     .change .menu .menu-items a {
+        display: block;
+        text-decoration: none;
+        color: var(--White);
+        font-family: 'Alata';
+        font-size: 30px;
+        margin-top: 20px;
+       
+    }
+
+    .hamburger-menu{
+        display: block;
+        position: absolute;
+        z-index: 100;
+        right: 25px;
+        top: 50px;
+    }
+    
+    .interactive{
+        display: block;
+        width: 80%;
+    }
+
+    .image-interactive{
+        width: 100%;
+    }
+
+    .interactive-text{
+        position: relative;
+        left: 0;
+        width: auto;
+        padding: 0;
+        margin: auto;
+    }
+
+    .interactive-leader{
+        font-size: 30px;
+    }
+
+    .company-history{
+        width: auto;
+    }
+
+    .creations{
+        text-align: center;
+    }
+
+    .full-gallery{
+       text-align: center;
+       width: 20%;
+       margin: 0 auto;
+    }
+
+    .picture-container{
+        width: 90%;
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    .picture-container-header{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .picture-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .grid-photo{
+        width: 100%;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-link-items{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .footer-top,
+    .footer-bottom,
+    .trademark{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons{
+        margin-top:20px;
+    }
+
+    .loop-footer{
+        font-size: 25px;
+    }
+
+    .top{
+        grid-row: 1 / 5;
+    }
+
+    .creations{
+        font-size: 30px;
+    }
+
+    .mobile-bottom{
+        grid-row: 5;
+        grid-column: 1 / 5;
+        align-self: center;
+        text-align: center;
+    }
+
+}

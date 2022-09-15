@@ -24,35 +24,41 @@ body{
 }
 /* ===== HERO STYLING ===== */
 .hero{
-    height: 600px;
-    background-image: url("/image-hero.jpg");
+    height: 55%;
+    background-image: url("/images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
-    background-position: inherit;
+    background-position: top center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(1, 15%);
+    grid-template-columns: repeat(12, 1fr);
 }
 
 #nav-menu{
-    display: flex;
-    justify-content: space-between;
-}
-
-.company{
-    margin-left: 10%;
+    padding-top: 1.5rem;
+    display: grid;
+    grid-template-rows: repeat(1, 80%);
+    grid-template-columns: repeat(12, 5fr);
+    grid-column: 2 / -1;
+    align-items: center;
 }
 
 .company-name{
     font-family: 'Alata';
-    font-size: 30px;
     color: var(--White);
+    grid-column: 1;
+    font-size: 30px;
+
 }
 
 .menu{
     display: flex;
     list-style-type: none;
-    margin-left: 500px;
+    grid-column: 9;
 }
 
 .menu .menu-items{
-    padding-right: 50px;
+    padding: 1rem;
     align-self: center;
 }
 
@@ -62,17 +68,20 @@ body{
     font-family: 'Alata';
 }
 
+header{
+    grid-column: 2 / 8;
+}
+
 .motto{
-    width: 500px;
-    font-size: 60px;
+    width: 100%;
+    font-size: 67px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     color: var(--White);
     border: 1px solid var(--White);
-    margin-top: 10%;
-    margin-left: 10%;
-    padding: 30px;
+    line-height: 1.15;
+    padding: 1.25rem 1.5rem;
 }
 
 /* ===== INTERACTIVE IMAGE ===== */
@@ -81,7 +90,7 @@ body{
     position: relative;
     display: flex;
     align-items: flex-end;
-    width: 80%;
+    width: 83%;
     margin: 125px auto;
     
 }
@@ -340,10 +349,15 @@ footer{
     }
 
     .full-gallery{
-        font-size: 20px;
-        padding: 10px 20px;
-        width: 100%;
+        font-size: 18px;
+        padding: 1rem;
+        width: 150px;
     }
+
+    header{
+        grid-column: 3;
+    }
+
     .photo-name{
         font-size: 22px;
         width: 70%;
@@ -358,12 +372,19 @@ footer{
 
     .hero{
         height: 400px;
+        display: block;
+        background-image: url(/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     #nav-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        grid-column: 1 / -1;
+        width: 80%;
+        margin: 0 auto;
     }
 
 
@@ -373,7 +394,7 @@ footer{
         color: var(--White);
         border: 1px solid var(--White);
         margin-left: 10%;
-        padding: 20px;
+        padding: 25px 20px;
     }
     
     .menu{
@@ -382,7 +403,7 @@ footer{
         position: absolute;
         z-index: 100;
         margin: 0;
-        top: 200px;
+        top: 100px;
     }
 
     .menu .menu-items a {
@@ -400,12 +421,13 @@ footer{
        
     }
 
+    .company-name{
+        grid-column: 2;
+        width: 85%;
+    }
+
     .hamburger-menu{
         display: block;
-        position: absolute;
-        z-index: 100;
-        right: 25px;
-        top: 50px;
     }
     
     .interactive{
@@ -431,6 +453,7 @@ footer{
 
     .company-history{
         width: auto;
+        line-height: 1.5;
     }
 
     .creations{

@@ -25,13 +25,14 @@ body{
 /* ===== HERO STYLING ===== */
 main{
     position: relative;
-}
+})
 
 
 
 .hero{
     height: 55%;
     display: grid;
+    background-image: url(images/desktop/image-hero.jpg);    
     grid-template-rows: repeat(1, 15%);
     grid-template-columns: repeat(12, 1fr);
 }

@@ -27,13 +27,7 @@ main{
     position: relative;
 }
 
-.hero_image{
-    position: absolute;
-    z-index: -10000;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-}
+
 
 .hero{
     height: 55%;
